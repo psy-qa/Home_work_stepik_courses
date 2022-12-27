@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="Q:\projects\Slenium_stepik\chenge_lang_test\env"
+VIRTUAL_ENV="Q:\projects\Slenium_stepik\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
