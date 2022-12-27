@@ -12,6 +12,7 @@ links = ["https://stepik.org/lesson/236895/step/1", "https://stepik.org/lesson/2
 
 
 @pytest.mark.parametrize('link', ["https://stepik.org/lesson/236895/step/1"])
+@pytest.mark.xfail
 def test_feedback(browser, link):
     """test feed back """
     try:
@@ -43,6 +44,7 @@ def test_feedback(browser, link):
         enter_answer = browser.find_element(By.XPATH, '/html/body/main/div[1]/div[2]/div/div[2]/div[1]/div/article/div/div/div[2]/div/section/div/div[1]/div[2]/div/div/div/textarea')
         print('2222')
         print('3333')
+        enter_answer.click()
         print('4444')
         enter_answer.send_keys(str(answer))
         print('555')
