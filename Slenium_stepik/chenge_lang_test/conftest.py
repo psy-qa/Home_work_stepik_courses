@@ -27,7 +27,7 @@ def browser(request):
         browser = webdriver.Chrome()
         browser.get(f"http://selenium1py.pythonanywhere.com/{language}/catalogue/coders-at-work_207/")
     else:
-        raise pytest.UsageError("=======you need choose lang ru of fr========")
+        raise pytest.UsageError("=======you need choose lang ru, es or fr========")
 
     yield browser
     browser.quit()
