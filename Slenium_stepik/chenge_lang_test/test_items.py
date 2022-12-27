@@ -5,4 +5,5 @@ def test_button_value_in_page(browser):
     button = browser.find_element(By.XPATH, '//*[@id="add_to_basket_form"]/button')
     button_text = button.get_attribute("value")
 
-    assert button_text == "Ajouter au panier" or button_text == "Добавить в корзину", "ERROR ASSER TEXT BUTTON"
+    assert button_text == "Ajouter au panier" or button_text == "Добавить в корзину"\
+        or button_text == "Añadir al carrito", "ERROR ASSER TEXT BUTTON"
